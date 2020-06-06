@@ -1,17 +1,36 @@
+<!--
+    This describes the HTML document itself
+-->
 <!DOCTYPE html>
 <html lang="en-us">
+
+<!--
+This <head> section will import the CSS stylesheet using the <link> tag 
+and apply it to the HTML page, it should always be done on the very top
+of the HTML page like so.
+ -->
 
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- The title of the page, this will be displayed on the tab of the website -->
     <title>Search Optimization Information</title>
 </head>
 
+<!-- 
+The <body> tag contains everything inside og the HTML
+page, this will contain all of the appropriate tags
+in order to create the page.
+ -->
+
 <body>
     <header class="header">
+        <!-- This is the Title of the page, or branding / logo -->
         <h1>Hori<span class="seo">seo</span>n</h1>
+        <!-- This is where the navigation exists, this contains the links to the sections in the page -->
         <nav>
             <ul>
+                <!-- All of the below <a> elements are used for links to the section in the page -->
                 <li>
                     <a href="#searchEngineOptimization">Search Engine Optimization</a>
                 </li>
@@ -24,10 +43,20 @@
             </ul>
         </nav>
     </header>
+    <!-- This is <section> tag is used as a placeholder to load an image and take up a section of the page -->
     <section class="hero" alt="A man leading a meeting with three other people around him" title="Meeting">
     </section>
+    <!-- 
+        The below <section> tag contains three <article> 
+        elements that contain articles and descriptions with images to outline
+        search optimization topics
+    -->
     <section class="content">
         <article id=searchEngineOptimization class="searchEngineOptimization">
+            <!-- 
+                The below <img> element contains the <alt> tag that is used for accessibility purposes.
+                This will be found with all of the <img> elements that are used in the HTML page.
+            -->
             <img src="./assets/images/search-engine-optimization.jpg" alt="Notebook displaying search optimization graphics" class="float-left" title="Notebook Ideas" />
             <h2>Search Engine Optimization</h2>
             <p>
@@ -51,6 +80,11 @@
             </p>
         </article>
     </section>
+    <!-- 
+        The below <aside> tag contains three <section> 
+        elements that contain information and descriptions with logos that give
+        tips for search optimizations
+    -->
     <aside class="benefits">
         <section class="benefitLead">
             <h3>Lead Generation</h3>
@@ -74,6 +108,11 @@
             </p>
         </section>
     </aside>
+    <!-- 
+        The below <footer> tag contains
+        the copyright information for who made the page
+        and who is the owner
+    -->
     <footer class="footer">
         <h4>Made with ❤️️ by Horiseon</h4>
         <p>
